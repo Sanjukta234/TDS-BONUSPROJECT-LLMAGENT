@@ -1,20 +1,20 @@
-LLM Agent GyaanSetu — Browser-Based Multi-Tool Reasoning
+**LLM Agent GyaanSetu — Browser-Based Multi-Tool Reasoning**
 This project is a proof-of-concept (POC) for building a browser-based LLM agent that can combine natural language reasoning with external tools like search engines, pipelined APIs, and even live JavaScript execution.
 
 Modern LLM agents aren’t limited to text — they dynamically integrate multiple tools and loop until tasks are solved. This app demonstrates that idea with a minimal, hackable UI + JavaScript agent core.
-
-🚀 Features
+____________________________________________________________
+🚀** Features**
 ✅ Multi-Provider Model Picker
-
+____________________________________________________________
 Choose between AI Pipe Proxy API (default), OpenAI GPT, Gemini, Claude, and others.
 Dynamic dropdown for switching providers & models.
 ✅ Reasoning Loop Agent
-
+____________________________________________________________
 Takes user input, queries the LLM, and loops with tool calls until the task is done.
 Uses OpenAI-style tool/function calls for tool invocation.
 ✅ Supported Tools
-
-🔎 Google Search Snippets – Fetch relevant web info.
+___________________________________________________________
+🔎 **Google Search Snippets – Fetch relevant web info.**
 🔗 AI Pipe Proxy API – Flexible AI workflows & pipelines.
 ⚡ JavaScript Sandbox – Execute JS code securely inside the browser.
 ✅ Robust UI/UX
@@ -23,8 +23,9 @@ Bootstrap-based clean design.
 Streaming-style chat window with file upload.
 Graceful error handling via bootstrap alerts.
 Performance monitor & tool action logging for debugging.
-📋 Project Overview
-Goal
+________________________________________________________
+📋** Project Overview**
+**Goal**
 Build a minimal JavaScript-based agent that can:
 
 Accept user input in the browser.
@@ -48,25 +49,21 @@ This POC reimplements the above loop in browser JavaScript, connected to provide
 Prerequisites
 A modern browser (Chrome/Edge/Firefox).
 
-API keys for:
+**API keys for:**
 
 AI Pipe proxy API (recommended)
 Optional: OpenAI, Gemini, or other providers.
-Setup
-Clone this repo:
 
-git clone https://github.com/23f1000805/tds-bonus-project-LLM-Agent.git
-cd tds-bonus-project-LLM-Agent
 Open index.html in your browser. (No backend server required — everything runs client-side!)
 
 Configure your API key in the Settings Panel inside the app.
 
-🎨 UI & Code Requirements
+🎨 **UI & Code Requirements**
 Model Picker: Dropdown built with bootstrap-llm-provider.
 Agent Loop: JavaScript event-driven loop for LLM ↔ Tool calls.
 Error UI: All errors shown via bootstrap-alert.
 Minimalism First: Codebase is intentionally simple, hackable, and extendable.
-📖 Example Conversation
+📖 **Example Conversation**
 User: Interview me to create a blog post. Agent: Sure! What’s the post about?
 
 User: About IBM. Agent: Let me search for IBM. → calls search("IBM")
@@ -74,8 +71,8 @@ User: About IBM. Agent: Let me search for IBM. → calls search("IBM")
 Agent: IBM is a global tech company founded in 1911...
 
 User: Next step, please. Agent: Let’s draft an outline for your blog post...
-
-🧪 Deliverable
+_____________________________________________________________
+🧪 **Deliverable**
 A browser JS app with:
 
 LLM chat window
@@ -87,15 +84,14 @@ Uses OpenAI-style function calling.
 Handles errors gracefully.
 
 Easy to extend for more tools.
-
-📂 Project Structure
-
-├── index.html   # Frontend UI (chat + settings)
-├── agent.js     # Core agent loop, providers, and tools
-├── styles.css     # css file
-└── README.md    # Documentation (this file)
-
-🙌 Acknowledgements
+__________________________________________________________
+**Project Structure**
+├── **index.html**   # Frontend UI (chat + settings)
+├── **agent.js**     # Core agent loop, providers, and tools
+├── **styles.css **    # css file
+└── **README.md **   # Documentation (this file)
+__________________________________________________________
+**Acknowledgements**
 AI Pipe for proxy API workflows
 OpenAI/Anthropic/Google for LLM providers
 Bootstrap for UI components
