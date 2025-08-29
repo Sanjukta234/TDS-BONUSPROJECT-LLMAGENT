@@ -1,7 +1,9 @@
-# TDS-BONUSPROJECT-LLMAGENT
-LLM Agent GyaanSetu — Browser-Based Multi-Tool Reasoning This project is a proof-of-concept (POC) for building a browser-based LLM agent that can combine natural language reasoning with external tools like search engines, pipelined APIs, and even live JavaScript execution.
+LLM Agent GyaanSetu — Browser-Based Multi-Tool Reasoning
+This project is a proof-of-concept (POC) for building a browser-based LLM agent that can combine natural language reasoning with external tools like search engines, pipelined APIs, and even live JavaScript execution.
 
-Features
+Modern LLM agents aren’t limited to text — they dynamically integrate multiple tools and loop until tasks are solved. This app demonstrates that idea with a minimal, hackable UI + JavaScript agent core.
+
+🚀 Features
 ✅ Multi-Provider Model Picker
 
 Choose between AI Pipe Proxy API (default), OpenAI GPT, Gemini, Claude, and others.
@@ -85,3 +87,20 @@ Uses OpenAI-style function calling.
 Handles errors gracefully.
 
 Easy to extend for more tools.
+
+📂 Project Structure
+
+├── index.html   # Frontend UI (chat + settings)
+├── agent.js     # Core agent loop, providers, and tools
+├── styles.css     # css file
+└── README.md    # Documentation (this file)
+
+🙌 Acknowledgements
+AI Pipe for proxy API workflows
+OpenAI/Anthropic/Google for LLM providers
+Bootstrap for UI components
+🔮 Next Steps
+
+Add conversation persistence with IndexedDB/localStorage.
+Enable streaming token-by-token responses.
+Expand tools: file parsing, charting, SQL, etc.
